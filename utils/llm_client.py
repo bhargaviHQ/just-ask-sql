@@ -11,8 +11,13 @@ if not GROQ_API_KEY:
 client = Groq(api_key=GROQ_API_KEY)
 
 def get_llm_response(prompt):
-    if "mongodb" in prompt.lower() or "password" in prompt.lower():
-        return "Error: Sensitive data detected in prompt"
+    # Extract just the user query from the prompt
+    query_start = prompt.find("Analyze this user query and return the task type and details as a valid JSON string: '") + 74
+    query_end = prompt.find("'", query_start)
+    if query_start != -1 and query_end != -1:
+        user_query = prompt[query_start:query_end]
+        if "mongodb" in user_query.lower() or "password" in user_query.lower():
+            return "Error: Sensitive data detected in prompt"
     
     full_prompt = f"{prompt}\n\nPlease format your response as a valid JSON string without any prefix."
     response = client.chat.completions.create(
