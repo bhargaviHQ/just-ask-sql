@@ -1,3 +1,6 @@
-id,name
-1,Alice
-2,Bob
+id,name,price,size,location
+3,table,1020,100,USA
+4,chair,1000,1000,USA
+5,fan,203,1000,CANADA
+6,book,100,100,CANADA
+7,pen,10,00,USA
