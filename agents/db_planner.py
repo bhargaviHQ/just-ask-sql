@@ -13,14 +13,16 @@ class DBPlannerAgent:
             return {
                 "operation": "insert_one",
                 "database": details.get("database"),
-                "collection": details.get("collection"),
+                "collection": details["collection"],
                 "document": details["data"]
             }
         elif task == "update_one":
+            if "data" not in details:
+                return {"operation": "error", "error": "No update data specified"}
             return {
                 "operation": "update_one",
                 "database": details.get("database"),
-                "collection": details.get("collection"),
+                "collection": details["collection"],
                 "filter": details.get("filter", {}),
                 "update": {"$set": details["data"]},
                 "upsert": details.get("upsert", False)
@@ -29,7 +31,7 @@ class DBPlannerAgent:
             return {
                 "operation": "find",
                 "database": details.get("database"),
-                "collection": details.get("collection"),
+                "collection": details["collection"],
                 "filter": details.get("filter", {}),
                 "limit": details.get("limit", 10)
             }
@@ -37,7 +39,14 @@ class DBPlannerAgent:
             return {
                 "operation": "delete_one",
                 "database": details.get("database"),
-                "collection": details.get("collection"),
+                "collection": details["collection"],
                 "filter": details.get("filter", {})
+            }
+        elif task == "insert_from_csv":
+            return {
+                "operation": "insert_from_csv",
+                "database": details.get("database"),
+                "collection": details["collection"],
+                "file_path": details["file_path"]
             }
         return {"operation": "error", "error": "Unsupported task"}
