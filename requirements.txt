@@ -1,0 +1,6 @@
+pymongo
+groq
+requests
+python-dotenv
+streamlit
+Pillow  # For logo handling
