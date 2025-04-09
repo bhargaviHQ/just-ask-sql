@@ -1,0 +1,1048 @@
+[
+  {
+    "query": "insert entry into store with storeid as 2 store name as east-store-1 and employeecount as 12",
+    "task": "insert_one",
+    "details": {
+      "collection": "store",
+      "data": {
+        "storeid": 2,
+        "store name": "east-store-1",
+        "employeecount": 12,
+        "_id": "67f6b870491cde0f8dc75a93"
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted document with ID 67f6b870491cde0f8dc75a93"
+    },
+    "reversible": true
+  },
+  {
+    "query": "insert entry into store with storeid as 1 store name as west-store-1 and employeecount as 13",
+    "task": "insert_one",
+    "details": {
+      "collection": "store",
+      "data": {
+        "storeid": 1,
+        "store name": "west-store-1",
+        "employeecount": 13,
+        "_id": "67f6b882491cde0f8dc75a94"
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted document with ID 67f6b882491cde0f8dc75a94"
+    },
+    "reversible": true
+  },
+  {
+    "query": "insert from csv data/sample.csv into collection store",
+    "task": "insert_from_csv",
+    "details": {
+      "collection": "store",
+      "file_path": "data/sample.csv"
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted 4 documents from CSV"
+    },
+    "reversible": true
+  },
+  {
+    "query": "insert from csv data/sample.csv into collection store\n\n",
+    "task": "insert_from_csv",
+    "details": {
+      "collection": "store",
+      "file_path": "data/sample.csv"
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted 4 documents from CSV"
+    },
+    "reversible": true
+  },
+  {
+    "query": "insert from csv data/sample.csv into collection store\n\n",
+    "task": "insert_from_csv",
+    "details": {
+      "collection": "store",
+      "file_path": "data/sample.csv"
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted 4 documents from CSV"
+    },
+    "reversible": true
+  },
+  {
+    "query": "insert from csv data/sample.csv into collection store\n\n",
+    "task": "insert_from_csv",
+    "details": {
+      "collection": "store",
+      "file_path": "data/sample.csv"
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted 4 documents from CSV"
+    },
+    "reversible": true
+  },
+  {
+    "query": "show all records in users collection",
+    "task": "find",
+    "details": {
+      "collection": "users"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f3e6827ec266f61ca2f49a",
+          "name": "John",
+          "age": 30
+        },
+        {
+          "_id": "67f4a32cfbc47d2aa589c46c",
+          "name": "Harry",
+          "age": 30,
+          "location": "seattle"
+        },
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f6b337c683c79becceaf92",
+          "age": 30,
+          "name": " "
+        }
+      ]
+    },
+    "reversible": false
+  },
+  {
+    "query": "show history ",
+    "task": "find",
+    "details": {
+      "collection": "None"
+    },
+    "result": {
+      "status": "success",
+      "result": []
+    },
+    "reversible": false
+  },
+  {
+    "query": "insert into users name priya age 20 location Georgia",
+    "task": "insert_one",
+    "details": {
+      "collection": "users",
+      "data": {
+        "name": "priya",
+        "age": 20,
+        "location": "Georgia",
+        "_id": "67f6d8969120392daa6c9a1d"
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted document with ID 67f6d8969120392daa6c9a1d"
+    },
+    "reversible": true
+  },
+  {
+    "query": "no forget it",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f3e6827ec266f61ca2f49a",
+          "name": "John",
+          "age": 30
+        },
+        {
+          "_id": "67f4a32cfbc47d2aa589c46c",
+          "name": "Harry",
+          "age": 30,
+          "location": "seattle"
+        },
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f6b337c683c79becceaf92",
+          "age": 30,
+          "name": " "
+        },
+        {
+          "_id": "67f6d8969120392daa6c9a1d",
+          "name": "priya",
+          "age": 20,
+          "location": "Georgia"
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "show all records in users",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f3e6827ec266f61ca2f49a",
+          "name": "John",
+          "age": 30
+        },
+        {
+          "_id": "67f4a32cfbc47d2aa589c46c",
+          "name": "Harry",
+          "age": 30,
+          "location": "seattle"
+        },
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f6b337c683c79becceaf92",
+          "age": 30,
+          "name": " "
+        },
+        {
+          "_id": "67f6d8969120392daa6c9a1d",
+          "name": "priya",
+          "age": 20,
+          "location": "Georgia"
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "show all records in users",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f3e6827ec266f61ca2f49a",
+          "name": "John",
+          "age": 30
+        },
+        {
+          "_id": "67f4a32cfbc47d2aa589c46c",
+          "name": "Harry",
+          "age": 30,
+          "location": "seattle"
+        },
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f6b337c683c79becceaf92",
+          "age": 30,
+          "name": " "
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "select users where age > 30",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "filter": {
+        "age": {
+          "$gt": 30
+        }
+      },
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "select users where age > 30 and name starts with J or A",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "filter": {
+        "age": {
+          "$gt": 30
+        },
+        "name": {
+          "$regex": "^[JA]"
+        }
+      },
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "select users where age is greater than 30 and name does not start with A and location is seattle",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "filter": {
+        "age": {
+          "$gt": 30
+        },
+        "name": {
+          "$not": {
+            "$regex": "^A"
+          }
+        },
+        "location": "seattle"
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": []
+    },
+    "reversible": false
+  },
+  {
+    "query": "select users where age is greater than 30 and name does not start with A and location is Seattle\n\n",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "filter": {
+        "age": {
+          "$gt": 30
+        },
+        "name": {
+          "$ne": {
+            "$regex": "^A"
+          }
+        },
+        "location": {
+          "$eq": "Seattle"
+        }
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        }
+      ]
+    },
+    "reversible": false
+  },
+  {
+    "query": "SELECT ALL USERS",
+    "task": "find",
+    "details": {
+      "collection": "USERS",
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "return all records from users",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f3e6827ec266f61ca2f49a",
+          "name": "John",
+          "age": 30
+        },
+        {
+          "_id": "67f4a32cfbc47d2aa589c46c",
+          "name": "Harry",
+          "age": 30,
+          "location": "seattle"
+        },
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f6b337c683c79becceaf92",
+          "age": 30,
+          "name": " "
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "select users where age is greater than 30 and name does not start with A and location is california",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "filter": {
+        "age": {
+          "$gt": 30
+        },
+        "name": {
+          "$not": {
+            "$regex": "^A"
+          }
+        },
+        "location": {
+          "$eq": "california"
+        }
+      },
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "select users where age is greater than 30 and name does not start with A and location is California",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "filter": {
+        "age": {
+          "$gt": 30
+        },
+        "name": {
+          "$not": {
+            "$regex": "^A"
+          }
+        },
+        "location": {
+          "$eq": "California"
+        }
+      },
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "create collection library",
+    "task": "create_collection",
+    "details": {
+      "collection": "library"
+    },
+    "result": {
+      "status": "success",
+      "result": "Collection library ready"
+    },
+    "reversible": false
+  },
+  {
+    "query": "SHOW ALL RECORDS FROM USERS COLLECTION",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f3e6827ec266f61ca2f49a",
+          "name": "John",
+          "age": 30
+        },
+        {
+          "_id": "67f4a32cfbc47d2aa589c46c",
+          "name": "Harry",
+          "age": 30,
+          "location": "seattle"
+        },
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f6b337c683c79becceaf92",
+          "age": 30,
+          "name": " "
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "insert into collections library a bookname as book1 and bookid is 1 and author is XYZ",
+    "task": "insert_one",
+    "details": {
+      "collection": "library",
+      "data": {
+        "bookname": "book1",
+        "bookid": 1,
+        "author": "XYZ",
+        "_id": "67f6ddc56d1df84f578d057a"
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted document with ID 67f6ddc56d1df84f578d057a"
+    },
+    "reversible": true
+  },
+  {
+    "query": "show all records from users",
+    "task": "find",
+    "details": {
+      "collection": "users",
+      "filter": {},
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f3e6827ec266f61ca2f49a",
+          "name": "John",
+          "age": 30
+        },
+        {
+          "_id": "67f4a32cfbc47d2aa589c46c",
+          "name": "Harry",
+          "age": 30,
+          "location": "seattle"
+        },
+        {
+          "_id": "67f4a370fbc47d2aa589c46d",
+          "name": "David",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a392fbc47d2aa589c46e",
+          "name": "Jane",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f4a45a7588ef509bb1c406",
+          "name": "Alice",
+          "age": 35,
+          "location": "California"
+        },
+        {
+          "_id": "67f4a46d7588ef509bb1c407",
+          "name": "Joe",
+          "age": 32,
+          "location": "Seattle"
+        },
+        {
+          "_id": "67f6b337c683c79becceaf92",
+          "age": 30,
+          "name": " "
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "create new collection product",
+    "task": "create_collection",
+    "details": {
+      "collection": "product"
+    },
+    "result": {
+      "status": "success",
+      "result": "Collection product ready"
+    },
+    "reversible": false
+  },
+  {
+    "query": "add id is 1, name is bodywash, price is 250, size 1000",
+    "task": "insert_one",
+    "details": {
+      "collection": "products",
+      "data": {
+        "id": 1,
+        "name": "bodywash",
+        "price": 250,
+        "size": 1000,
+        "_id": "67f6f368d107436c31cf2714"
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted document with ID 67f6f368d107436c31cf2714"
+    },
+    "reversible": true
+  },
+  {
+    "query": "add id is 2, name is shampoo, price is 210, size 1000\n\n",
+    "task": "insert_one",
+    "details": {
+      "collection": "None",
+      "data": {
+        "id": 2,
+        "name": "shampoo",
+        "price": 210,
+        "size": 1000,
+        "_id": "67f6f399d107436c31cf2715"
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted document with ID 67f6f399d107436c31cf2715"
+    },
+    "reversible": true
+  },
+  {
+    "query": "insert data from csv in the path data/sample.csv in collection product",
+    "task": "insert_from_csv",
+    "details": {
+      "collection": "product",
+      "file_path": "data/sample.csv"
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted 5 documents from CSV",
+      "inserted_ids": [
+        "67f6f404d107436c31cf2716",
+        "67f6f404d107436c31cf2717",
+        "67f6f404d107436c31cf2718",
+        "67f6f404d107436c31cf2719",
+        "67f6f404d107436c31cf271a"
+      ]
+    },
+    "reversible": true
+  },
+  {
+    "query": "add new column location for id 3 with value US",
+    "task": "update_one",
+    "details": {
+      "collection": "users",
+      "filter": {
+        "id": 3
+      },
+      "data": {
+        "location": "US"
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Matched 0, modified 0"
+    },
+    "reversible": true
+  },
+  {
+    "query": "insert data from csv in the path data/sample.csv in collection productS",
+    "task": "insert_from_csv",
+    "details": {
+      "collection": "productS",
+      "file_path": "data/sample.csv"
+    },
+    "result": {
+      "status": "success",
+      "result": "Inserted 5 documents from CSV",
+      "inserted_ids": [
+        "67f6f45ad107436c31cf271b",
+        "67f6f45ad107436c31cf271c",
+        "67f6f45ad107436c31cf271d",
+        "67f6f45ad107436c31cf271e",
+        "67f6f45ad107436c31cf271f"
+      ]
+    },
+    "reversible": true
+  },
+  {
+    "query": "SELECT all records from productS where location is USA",
+    "task": "find",
+    "details": {
+      "collection": "productS",
+      "filter": {
+        "location": {
+          "$eq": "USA"
+        }
+      },
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f6f45ad107436c31cf271b",
+          "id": 3,
+          "name": "table",
+          "price": 1020,
+          "size": 100,
+          "location": "USA"
+        },
+        {
+          "_id": "67f6f45ad107436c31cf271c",
+          "id": 4,
+          "name": "chair",
+          "price": 1000,
+          "size": 1000,
+          "location": "USA"
+        },
+        {
+          "_id": "67f6f45ad107436c31cf271f",
+          "id": 7,
+          "name": "pen",
+          "price": 10,
+          "size": 0,
+          "location": "USA"
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "select top highest price 2 records from productS where location is USA ",
+    "task": "find",
+    "details": {
+      "collection": "productS",
+      "filter": {
+        "location": {
+          "$eq": "USA"
+        }
+      },
+      "format": "table",
+      "sort": {
+        "price": -1
+      },
+      "limit": 2
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f6f45ad107436c31cf271b",
+          "id": 3,
+          "name": "table",
+          "price": 1020,
+          "size": 100,
+          "location": "USA"
+        },
+        {
+          "_id": "67f6f45ad107436c31cf271c",
+          "id": 4,
+          "name": "chair",
+          "price": 1000,
+          "size": 1000,
+          "location": "USA"
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "select the records from productS where the value of the price is greater than the previous record",
+    "task": "find",
+    "details": {
+      "collection": "productS",
+      "filter": {
+        "_id": {
+          "$gt": "$$prev"
+        }
+      },
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [],
+      "format": "table"
+    },
+    "reversible": false
+  },
+  {
+    "query": "not query 27",
+    "task": "delete_one",
+    "details": {
+      "collection": "product",
+      "filter": {
+        "name": {
+          "$eq": "table"
+        }
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Deleted 1 document"
+    },
+    "reversible": true
+  },
+  {
+    "query": "rename collections productS to topproducts",
+    "task": "rename_collection",
+    "details": {
+      "old_collection": "productS",
+      "new_collection": "topproducts"
+    },
+    "result": {
+      "status": "error",
+      "message": "Unsupported task"
+    },
+    "reversible": false
+  },
+  {
+    "query": "delete record where name = table in productS collection",
+    "task": "delete_one",
+    "details": {
+      "collection": "productS",
+      "filter": {
+        "name": {
+          "$eq": "table"
+        }
+      }
+    },
+    "result": {
+      "status": "success",
+      "result": "Deleted 1 document"
+    },
+    "reversible": true
+  },
+  {
+    "query": "show history ",
+    "task": "find",
+    "details": {
+      "collection": "None",
+      "filter": {},
+      "format": "table"
+    },
+    "result": {
+      "status": "success",
+      "result": [
+        {
+          "_id": "67f6f399d107436c31cf2715",
+          "id": 2,
+          "name": "shampoo",
+          "price": 210,
+          "size": 1000
+        }
+      ],
+      "format": "table"
+    },
+    "reversible": false
+  }
+]
