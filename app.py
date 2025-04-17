@@ -6,7 +6,7 @@ from PIL import Image
 controller = ControllerAgent()
 
 try:
-    logo = Image.open("ask-me-data-logo.jpeg")  # Updated to your logo file
+    logo = Image.open("ask-me-data-logo.jpeg") 
     st.markdown('<div class="logo-container">', unsafe_allow_html=True)
     st.image(logo, width=150, caption="", use_container_width=False)
     st.markdown('</div>', unsafe_allow_html=True)
